@@ -1,0 +1,7 @@
+a {
+  color: #ffc107
+}
+a:hover {
+  color: #f1b708;
+  text-decoration-style: dotted
+}
