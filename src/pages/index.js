@@ -347,10 +347,6 @@ const IndexPage = () => {
                   </div>
                 </div>
               </div>
-              <a className="btn-link text-secondary" href="#">
-                Contact Me
-                <i className="fa fa-angle-right ml-2"> </i>
-              </a>
             </div>
           </div>
         </div>
@@ -366,20 +362,6 @@ const IndexPage = () => {
               <a className="btn btn-warning btn-lg mr-2" href="#">
                 Connect now
               </a>
-              {/* <a className="btn btn-secondary btn-lg" href="#">
-                About Me
-              </a> */}
-              <p className="pt-3">
-                <small>
-                  <a className="btn-link text-secondary" href="#">
-                    <i
-                      className="fa fa-caret-right mr-2"
-                      aria-hidden="true"
-                    ></i>
-                    Contact me right now
-                  </a>
-                </small>
-              </p>
             </div>
           </div>
         </div>
