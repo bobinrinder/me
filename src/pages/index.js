@@ -21,7 +21,7 @@ const IndexPage = () => {
         id="hero-01"
         style={{
           background:
-            "url('https://res.cloudinary.com/robinbinder/image/upload/v1587622044/me3-right.fw-min_jdvazh.png') center top",
+            "url('https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587622044/me3-right.fw-min_jdvazh.png') center top",
           backgroundSize: "cover",
         }}
       >
@@ -86,7 +86,7 @@ const IndexPage = () => {
                   <FontAwesomeIcon icon={faHandSpock} className="mr-2" /> Say Hi
                 </a>
               </Link>
-              <Link
+              {/* <Link
                 activeClass="active"
                 to="features-01"
                 spy={true}
@@ -99,7 +99,7 @@ const IndexPage = () => {
                   About Me
                   <i className="fa fa-angle-right ml-2"></i>
                 </a>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
