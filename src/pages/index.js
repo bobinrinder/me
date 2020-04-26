@@ -349,6 +349,7 @@ const IndexPage = () => {
                 data-netlify="true"
                 data-netlify-recaptcha="true"
               >
+                <input type="hidden" name="form-name" value="contact" />
                 <FormGroup>
                   <Label for="exampleEmail">Your Email</Label>
                   <Input type="email" name="email" id="email" required />
