@@ -63,8 +63,22 @@ const Header = () => {
                 offset={50}
                 duration={500}
               >
-                <a className="nav-link" href="#projects">
-                  Projects
+                <a className="nav-link" href="#work">
+                  Work
+                </a>
+              </Link>
+            </li>
+            <li className="nav-item ml-1 mr-3">
+              <Link
+                activeClass="active"
+                to="technologies-01"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+              >
+                <a className="nav-link" href="#technologies">
+                  Technologies
                 </a>
               </Link>
             </li>
