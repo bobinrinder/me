@@ -1,6 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons"
 import { Link, scrollToTop } from "react-scroll"
 import useScrollPosition from "@react-hook/window-scroll"
 
@@ -18,7 +19,8 @@ const Header = () => {
         }
       >
         <a className="navbar-brand p-0" href="#" onClick={scrollToTop}>
-          Robin Binder
+          <FontAwesomeIcon icon={faUserAstronaut} className="mr-2" /> Robin
+          Binder
         </a>
         <button
           className="navbar-toggler"

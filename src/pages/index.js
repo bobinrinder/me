@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -8,13 +8,17 @@ import Layout from "../components/layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faHandSpock,
-  faUserAstronaut,
   faAngleRight,
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-scroll"
+import { Tooltip } from "reactstrap"
 
 const IndexPage = () => {
+  const [tooltipOpen, setTooltipOpen] = useState(false)
+
+  const toggleTooltip = () => setTooltipOpen(!tooltipOpen)
+
   return (
     <Layout>
       <div
@@ -32,20 +36,39 @@ const IndexPage = () => {
           <div className="row my-auto">
             <div className="col-lg-5 col-md-8 col-sm-12">
               <h3
-                className="display-3 font-weight-normal"
+                className="display-3 font-weight-normal mr-2"
                 style={{
                   fontFamily: "'Montserrat', sans-serif",
                   display: "inline",
                 }}
               >
-                Hallöle{" "}
+                Hallöle
               </h3>
-              <FontAwesomeIcon
-                icon={faInfoCircle}
-                size="lg"
-                style={{ position: "relative", bottom: "40px" }}
-              />
-              {/* <h5 className="mt-0 mb-3">[swabian for hello]</h5> */}
+
+              <span href="#" id="HelloTooltip">
+                <FontAwesomeIcon
+                  color="#ffc107"
+                  icon={faInfoCircle}
+                  size="lg"
+                  style={{ position: "relative", bottom: "40px" }}
+                />
+              </span>
+              <Tooltip
+                placement="right"
+                isOpen={tooltipOpen}
+                target="HelloTooltip"
+                toggle={toggleTooltip}
+                autohide={false}
+              >
+                <a
+                  href="https://en.wikipedia.org/wiki/Swabian_German"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  swabian
+                </a>{" "}
+                for "hello"
+              </Tooltip>
               <h4
                 className="font-weight-normal mb-5 mt-4"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -86,20 +109,6 @@ const IndexPage = () => {
                   <FontAwesomeIcon icon={faHandSpock} className="mr-2" /> Say Hi
                 </a>
               </Link>
-              {/* <Link
-                activeClass="active"
-                to="features-01"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
-                <a className="btn btn-light bg-white border-0 btn-lg" href="#">
-                  <FontAwesomeIcon icon={faUserAstronaut} className="mr-2" />{" "}
-                  About Me
-                  <i className="fa fa-angle-right ml-2"></i>
-                </a>
-              </Link> */}
             </div>
           </div>
         </div>
@@ -242,11 +251,6 @@ const IndexPage = () => {
               <div className="card-group mb-4">
                 <div className="card pt-5 mb-3 border-white">
                   <div className="card-body text-center">
-                    {/* <img
-                      className="rounded-circle mb-4"
-                      src="images/photo-04.jpg"
-                      height="100"
-                    /> */}
                     <h4 className="mb-3">Web</h4>
                     <p className="mb-2 text-secondary lead mx-3">
                       {" "}
@@ -261,11 +265,6 @@ const IndexPage = () => {
                 </div>
                 <div className="card pt-5 mb-3 border-white mx-1">
                   <div className="card-body text-center">
-                    {/* <img
-                      className="rounded-circle mb-4"
-                      src="images/photo-05.jpg"
-                      height="100"
-                    /> */}
                     <h4 className="mb-3">Native</h4>
                     <p className="mb-2 text-secondary lead mx-3">Lorem Ipsum</p>
                   </div>
@@ -277,11 +276,6 @@ const IndexPage = () => {
                 </div>
                 <div className="card pt-5 mb-3 border-white">
                   <div className="card-body text-center">
-                    {/* <img
-                      className="rounded-circle mb-4"
-                      src="images/photo-06.jpg"
-                      height="100"
-                    /> */}
                     <h4 className="mb-3">Backend</h4>
                     <p className="mb-2 text-secondary lead mx-3">Lorem Ipsum</p>
                   </div>
@@ -300,11 +294,6 @@ const IndexPage = () => {
                 <div className="card pt-5 mb-3 border-white"></div>
                 <div className="card pt-5 mb-3 border-white">
                   <div className="card-body text-center">
-                    {/* <img
-                      className="rounded-circle mb-4"
-                      src="images/photo-06.jpg"
-                      height="100"
-                    /> */}
                     <h4 className="mb-3">CI/CD</h4>
                     <p className="mb-2 text-secondary lead mx-3">Lorem Ipsum</p>
                   </div>
@@ -316,11 +305,6 @@ const IndexPage = () => {
                 </div>
                 <div className="card pt-5 mb-3 border-white">
                   <div className="card-body text-center">
-                    {/* <img
-                      className="rounded-circle mb-4"
-                      src="images/photo-06.jpg"
-                      height="100"
-                    /> */}
                     <h4 className="mb-3">DevOps</h4>
                     <p className="mb-2 text-secondary lead mx-3">Lorem Ipsum</p>
                   </div>
@@ -332,11 +316,6 @@ const IndexPage = () => {
                 </div>
                 <div className="card pt-5 mb-3 border-white">
                   <div className="card-body text-center">
-                    {/* <img
-                      className="rounded-circle mb-4"
-                      src="images/photo-06.jpg"
-                      height="100"
-                    /> */}
                     <h4 className="mb-3">Analytics</h4>
                     <p className="mb-2 text-secondary lead mx-3">Lorem Ipsum</p>
                   </div>
