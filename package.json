@@ -24,6 +24,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
+    "react-lazy-load-image-component": "^1.4.3",
     "react-netlify-form": "^2.1.5",
     "react-scroll": "^1.7.16",
     "reactstrap": "^8.4.1"
