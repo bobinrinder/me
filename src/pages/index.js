@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-scroll"
 import { Tooltip } from "reactstrap"
-import { Button, Form, FormGroup, Label, Input } from "reactstrap"
+import ContactForm from "../components/ContactForm"
 
 const IndexPage = () => {
   const [tooltipOpen, setTooltipOpen] = useState(false)
@@ -337,38 +337,13 @@ const IndexPage = () => {
             <div className="col-lg-8 col-md-12 col-sm-12 mx-auto">
               <h2 className="display-4 mb-4">Hit me up!</h2>
               <p className="lead text-secondary mb-5 pb-2 mx-5">
-                Available for freelance and pro-bono work!
+                I'm available for freelance and pro-bono work!
               </p>
             </div>
           </div>
           <div className="row text-center">
             <div className="col-lg-4 col-md-12 col-sm-12 mx-auto">
-              <Form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                data-netlify-recaptcha="true"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <FormGroup>
-                  <Label for="exampleEmail">Your Email</Label>
-                  <Input type="email" name="email" id="email" required />
-                </FormGroup>
-                <FormGroup>
-                  <Label for="exampleText">Your Message</Label>
-                  <Input
-                    type="textarea"
-                    rows="5"
-                    name="message"
-                    id="message"
-                    required
-                  />
-                </FormGroup>
-                <div data-netlify-recaptcha="true"></div>
-                <Button color="warning" size="lg">
-                  Submit
-                </Button>
-              </Form>
+              <ContactForm />
             </div>
           </div>
         </div>
@@ -412,17 +387,8 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-6 col-md-12 text-secondary text-center text-lg-left">
-              <p className="pb-2">&copy; 2020 Robin Binder</p>
-            </div>
-            <div className="col-lg-6 col-md-12 text-secondary text-center text-lg-right">
-              <ul className="list-inline pb-2">
-                <li className="list-inline-item">
-                  <a className="py-2 text-secondary" href="#">
-                    mail@robinbinder.com
-                  </a>
-                </li>
-              </ul>
+            <div className="col-lg-12 col-md-12 text-secondary text-center text-lg-left">
+              <p className="pb-2">Made with ♥ in Vancouver, BC</p>
             </div>
           </div>
         </div>
