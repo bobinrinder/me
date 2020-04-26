@@ -6,11 +6,7 @@ import Layout from "../components/layout"
 // import { globalHistory } from "@reach/router/lib/history"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faHandSpock,
-  faAngleRight,
-  faInfoCircle,
-} from "@fortawesome/free-solid-svg-icons"
+import { faHandSpock, faInfoCircle } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-scroll"
 import { Tooltip } from "reactstrap"
 import ContactForm from "../components/ContactForm"
@@ -127,21 +123,28 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-3">
-              <h3 className="h5 mb-3">Education</h3>
-              <p className="text-secondary lead mb-3 mr-3">Lorem Ipsum</p>
+            <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
+              <h3 className="h5 mb-3">Personal History</h3>
+              <p className="text-secondary mb-3 mr-3">
+                Raised in the suburbs of Stuttgart, Germany I moved to
+                Vancouver, Canada after a sabbatical year of exploring. Working
+                on different ideas around technology has been my passion since I
+                was very young.
+              </p>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-3">
-              <h3 className="h5 mb-3">Work history</h3>
-              <p className="text-secondary lead mb-3 mr-3">Lorem Ipsum</p>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-3">
-              <h3 className="h5 mb-3">Spare time</h3>
-              <p className="text-secondary lead mb-3 mr-3">Lorem Ipsum</p>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-12 mb-3">
-              <h3 className="h5 mb-3">Location</h3>
-              <p className="text-secondary lead mb-3 mr-3">Lorem Ipsum</p>
+            <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
+              <h3 className="h5 mb-3">Work History</h3>
+              <p className="text-secondary mb-3 mr-3">
+                2018 - Current Technical Lead at m56 Studios
+                <br />
+                2015 - 2018 Lead Software Engineer at The Coup Company
+                <br />
+                2014 Sabbatical
+                <br />
+                2011 - 2013 Software Engineer at Peter Hahn GmbH
+                <br />
+                2008 - 2011 Corporative Student at Peter Hahn GmbH
+              </p>
             </div>
           </div>
         </div>

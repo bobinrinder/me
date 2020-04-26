@@ -100,14 +100,14 @@ const Header = () => {
           <a
             href="https://github.com/bobinrinder"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} className="mr-3" size="2x" />
           </a>
           <a
             href="https://www.linkedin.com/in/robin-binder-34a47734/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} className="mr-2" size="2x" />
           </a>
