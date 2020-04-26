@@ -13,6 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-scroll"
 import { Tooltip } from "reactstrap"
+import { Button, Form, FormGroup, Label, Input } from "reactstrap"
 
 const IndexPage = () => {
   const [tooltipOpen, setTooltipOpen] = useState(false)
@@ -333,21 +334,47 @@ const IndexPage = () => {
       <div className="pt-5 mt-5" id="content-03">
         <div className="container py-5">
           <div className="row text-center">
-            <div className="col-lg-10 col-md-12 col-sm-12 mx-auto">
+            <div className="col-lg-8 col-md-12 col-sm-12 mx-auto">
               <h2 className="display-4 mb-4">Hit me up!</h2>
               <p className="lead text-secondary mb-5 pb-2 mx-5">
                 Available for freelance and pro-bono work!
               </p>
-              <a className="btn btn-warning btn-lg mr-2" href="#">
-                Connect now
-              </a>
+            </div>
+          </div>
+          <div className="row text-center">
+            <div className="col-lg-4 col-md-12 col-sm-12 mx-auto">
+              <Form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-recaptcha="true"
+              >
+                <FormGroup>
+                  <Label for="exampleEmail">Your Email</Label>
+                  <Input type="email" name="email" id="email" required />
+                </FormGroup>
+                <FormGroup>
+                  <Label for="exampleText">Your Message</Label>
+                  <Input
+                    type="textarea"
+                    rows="5"
+                    name="message"
+                    id="message"
+                    required
+                  />
+                </FormGroup>
+                <div data-netlify-recaptcha="true"></div>
+                <Button color="warning" size="lg">
+                  Submit
+                </Button>
+              </Form>
             </div>
           </div>
         </div>
       </div>
       <div className="pt-5 pb-1" id="footer-01">
         <div className="container">
-          <div className="row align-items-center">
+          {/* <div className="row align-items-center">
             <div className="col-md-12 col-lg-6 text-center text-lg-left">
               <ul className="list-inline my-4 my-0">
                 <li className="list-inline-item">
@@ -377,7 +404,7 @@ const IndexPage = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="col">
               <hr className="mb-4" />
