@@ -332,21 +332,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="pt-5 mt-5" id="content-03">
-        <div className="container py-5">
-          <div className="row text-center">
-            <div className="col-lg-8 col-md-12 col-sm-12 mx-auto">
-              <h2 className="display-4 mb-4">Hit me up!</h2>
-              <p className="lead text-secondary mb-5 pb-2 mx-5">
-                I'm available for freelance and pro-bono work!
-              </p>
-            </div>
-          </div>
-          <div className="row text-center">
-            <div className="col-lg-4 col-md-12 col-sm-12 mx-auto">
-              <ContactForm />
-            </div>
-          </div>
-        </div>
+        <ContactForm />
       </div>
       <div className="pt-5 pb-1" id="footer-01">
         <div className="container">
@@ -387,8 +373,14 @@ const IndexPage = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-12 col-md-12 text-secondary text-center text-lg-left">
+            <div class="col-lg-4 col-md-12 text-secondary text-center text-lg-left">
+              <p class="pb-2"></p>
+            </div>
+            <div className="col-lg-4 col-md-12 text-secondary text-center">
               <p className="pb-2">Made with ♥ in Vancouver, BC</p>
+            </div>
+            <div class="col-lg-4 col-md-12 text-secondary text-center text-lg-right">
+              <p class="pb-2">© 2020 Robin Binder</p>
             </div>
           </div>
         </div>
