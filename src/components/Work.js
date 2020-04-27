@@ -7,7 +7,7 @@ import AppStoreButton from "./AppStoreButton"
 const Work = () => {
   return (
     <>
-      <div id="content-02">
+      <div id="work-01">
         <div className="container-fluid">
           <div
             className="row mt-3"
@@ -50,7 +50,7 @@ const Work = () => {
 
       <div
         className="py-5"
-        id="content-01"
+        id="work-02"
         style={{
           backgroundColor: "rgb(231, 100, 37)",
           backgroundSize: "cover",
@@ -146,7 +146,7 @@ const Work = () => {
 
       <div
         className="py-5"
-        id="content-01"
+        id="work-03"
         style={{
           backgroundColor: "#310935",
           backgroundSize: "cover",

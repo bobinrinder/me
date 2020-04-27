@@ -59,7 +59,7 @@ const TopNavigation = () => {
                 activeClass="active"
                 className="nav-link"
                 href="#projects"
-                to="content-01"
+                to="work-01"
                 spy={true}
                 smooth={true}
                 offset={50}

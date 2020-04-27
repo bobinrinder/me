@@ -78,7 +78,7 @@ const Hero = () => {
               <br />
               <br />I am building{" "}
               <Link
-                to="content-01"
+                to="work-01"
                 spy={true}
                 smooth={true}
                 offset={50}
