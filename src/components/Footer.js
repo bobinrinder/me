@@ -13,13 +13,19 @@ const Footer = () => {
         <div className="row">
           <div class="col-lg-4 col-md-12 text-secondary text-center text-lg-left">
             <p class="pb-2">
-              <ExternalLink href="http://github.com/bobinrinder/me">
+              <ExternalLink href="https://github.com/bobinrinder/me">
                 Get this template on Github
               </ExternalLink>
             </p>
           </div>
           <div className="col-lg-4 col-md-12 text-secondary text-center">
-            <p className="pb-2">Made with ♥ in Vancouver, BC</p>
+            <p className="pb-2">
+              Built with{" "}
+              <ExternalLink href="https://www.gatsbyjs.org/">
+                Gatsby
+              </ExternalLink>{" "}
+              in Vancouver, BC
+            </p>
           </div>
           <div class="col-lg-4 col-md-12 text-secondary text-center text-lg-right">
             <p class="pb-2">© {new Date().getFullYear()} Robin Binder</p>

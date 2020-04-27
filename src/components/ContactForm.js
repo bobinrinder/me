@@ -62,7 +62,7 @@ const ContactForm = () => {
                       </FormGroup>
                       <Button color="warning" size="lg">
                         <FontAwesomeIcon icon={faEnvelope} className="mr-2" />{" "}
-                        Submit
+                        Send
                       </Button>
                     </div>
                   </div>
