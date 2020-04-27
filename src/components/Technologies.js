@@ -30,11 +30,11 @@ const Technologies = () => {
                     My experimental candidate: Svelte
                   </p>
                 </div>
-                <div className="card-footer bg-transparent border-0 text-center py-4">
+                {/* <div className="card-footer bg-transparent border-0 text-center py-4">
                   <a className="btn-link h4 text-secondary p-2" href="#">
                     <i className="fa fa-twitter"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="card pt-5 mb-3 border-white mx-1">
                 <div className="card-body text-center">
@@ -48,11 +48,11 @@ const Technologies = () => {
                     My experimental candidate: Flutter
                   </p>
                 </div>
-                <div className="card-footer bg-transparent border-0 text-center py-4">
+                {/* <div className="card-footer bg-transparent border-0 text-center py-4">
                   <a className="btn-link h4 text-secondary p-2" href="#">
                     <i className="fa fa-twitter"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="card pt-5 mb-3 border-white">
                 <div className="card-body text-center">
@@ -69,11 +69,11 @@ const Technologies = () => {
                     My experimental candidate: Phoenix
                   </p>
                 </div>
-                <div className="card-footer bg-transparent border-0 text-center py-4">
+                {/* <div className="card-footer bg-transparent border-0 text-center py-4">
                   <a className="btn-link h4 text-secondary p-2" href="#">
                     <i className="fa fa-twitter"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -86,33 +86,33 @@ const Technologies = () => {
                   <h4 className="mb-3">CI/CD</h4>
                   <p className="mb-2 text-secondary lead mx-3">Lorem Ipsum</p>
                 </div>
-                <div className="card-footer bg-transparent border-0 text-center py-4">
+                {/* <div className="card-footer bg-transparent border-0 text-center py-4">
                   <a className="btn-link h4 text-secondary p-2" href="#">
                     <i className="fa fa-twitter"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="card pt-5 mb-3 border-white">
                 <div className="card-body text-center">
                   <h4 className="mb-3">DevOps</h4>
                   <p className="mb-2 text-secondary lead mx-3">Lorem Ipsum</p>
                 </div>
-                <div className="card-footer bg-transparent border-0 text-center py-4">
+                {/* <div className="card-footer bg-transparent border-0 text-center py-4">
                   <a className="btn-link h4 text-secondary p-2" href="#">
                     <i className="fa fa-twitter"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="card pt-5 mb-3 border-white">
                 <div className="card-body text-center">
                   <h4 className="mb-3">Analytics</h4>
                   <p className="mb-2 text-secondary lead mx-3">Lorem Ipsum</p>
                 </div>
-                <div className="card-footer bg-transparent border-0 text-center py-4">
+                {/* <div className="card-footer bg-transparent border-0 text-center py-4">
                   <a className="btn-link h4 text-secondary p-2" href="#">
                     <i className="fa fa-twitter"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

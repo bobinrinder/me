@@ -70,8 +70,9 @@ const Hero = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
+                href="#about"
               >
-                <a href="#about">Robin</a>
+                Robin
               </Link>
               , a software engineer
               <br />
@@ -82,22 +83,23 @@ const Hero = () => {
                 smooth={true}
                 offset={50}
                 duration={500}
+                href="#about"
               >
-                <a href="#about">apps and websites</a>
+                apps and websites
               </Link>{" "}
               for corporations, celebrities and non-profits
             </h4>
             <Link
               activeClass="active"
+              className="btn btn-warning btn-lg mr-2"
+              href="#contact"
               to="footer-01"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
             >
-              <a className="btn btn-warning btn-lg mr-2" href="#">
-                <FontAwesomeIcon icon={faHandSpock} className="mr-2" /> Say Hi
-              </a>
+              <FontAwesomeIcon icon={faHandSpock} className="mr-2" /> Say Hi
             </Link>
           </div>
         </div>

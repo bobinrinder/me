@@ -18,7 +18,7 @@ const TopNavigation = () => {
           scrollY > 15 ? { boxShadow: "0 0 3px rgba(0, 0, 0, 0.3)" } : null
         }
       >
-        <a className="navbar-brand p-0" href="#" onClick={scrollToTop}>
+        <a className="navbar-brand p-0" href="#top" onClick={scrollToTop}>
           <FontAwesomeIcon icon={faUserAstronaut} className="mr-2" /> Robin
           Binder
         </a>
@@ -43,57 +43,57 @@ const TopNavigation = () => {
             <li className="nav-item mx-1">
               <Link
                 activeClass="active"
+                className="nav-link"
+                href="#about"
                 to="features-01"
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500}
               >
-                <a className="nav-link" href="#about">
-                  About Me
-                </a>
+                About Me
               </Link>
             </li>
             <li className="nav-item mx-1">
               <Link
                 activeClass="active"
+                className="nav-link"
+                href="#projects"
                 to="content-01"
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500}
               >
-                <a className="nav-link" href="#work">
-                  Work
-                </a>
+                Work
               </Link>
             </li>
             <li className="nav-item ml-1 mr-3">
               <Link
                 activeClass="active"
+                className="nav-link"
+                href="#technologies"
                 to="technologies-01"
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500}
               >
-                <a className="nav-link" href="#technologies">
-                  Technologies
-                </a>
+                Technologies
               </Link>
             </li>
             <li className="nav-item ml-1 mr-3">
               <Link
                 activeClass="active"
+                className="nav-link"
+                href="#contact"
                 to="footer-01"
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500}
               >
-                <a className="nav-link" href="mailto:mail@robinbinder.com">
-                  Contact
-                </a>
+                Contact
               </Link>
             </li>
           </ul>
