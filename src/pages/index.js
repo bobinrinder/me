@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 // import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 // import SEO from "../components/seo"
 // import { globalHistory } from "@reach/router/lib/history"
 
@@ -10,7 +10,10 @@ import { faHandSpock, faInfoCircle } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-scroll"
 import { Tooltip } from "reactstrap"
 import ContactForm from "../components/ContactForm"
+import About from "../components/About"
 import Work from "../components/Work"
+import Footer from "../components/Footer"
+import ExternalLink from "../components/ExternalLink"
 
 const IndexPage = () => {
   const [tooltipOpen, setTooltipOpen] = useState(false)
@@ -58,13 +61,9 @@ const IndexPage = () => {
                 toggle={toggleTooltip}
                 autohide={false}
               >
-                <a
-                  href="https://en.wikipedia.org/wiki/Swabian_German"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <ExternalLink href="https://en.wikipedia.org/wiki/Swabian_German">
                   swabian
-                </a>{" "}
+                </ExternalLink>{" "}
                 for "hello"
               </Tooltip>
               <h4
@@ -112,43 +111,7 @@ const IndexPage = () => {
         </div>
       </div>
 
-      <div className="container">
-        <hr className="m-0" />
-      </div>
-      <div className="py-2" id="features-01">
-        <div className="container py-5 my-3">
-          <div className="row">
-            <div className="col-12 text-center">
-              <h1 className="mb-5">About Me</h1>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
-              <h3 className="h5 mb-3">Personal History</h3>
-              <p className="text-secondary mb-3 mr-3">
-                Raised in the suburbs of Stuttgart, Germany I moved to
-                Vancouver, Canada after a sabbatical year of exploring. Working
-                on different ideas around technology has been my passion since I
-                was very young.
-              </p>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
-              <h3 className="h5 mb-3">Work History</h3>
-              <p className="text-secondary mb-3 mr-3">
-                2018 - Current Technical Lead at m56 Studios
-                <br />
-                2015 - 2018 Lead Software Engineer at The Coup Company
-                <br />
-                2014 Sabbatical
-                <br />
-                2011 - 2013 Software Engineer at Peter Hahn GmbH
-                <br />
-                2008 - 2011 Corporative Student at Peter Hahn GmbH
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <About />
 
       <Work />
 
@@ -246,60 +209,10 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div className="pt-5 mt-5" id="content-03">
-        <ContactForm />
-      </div>
-      <div className="pt-5 pb-1" id="footer-01">
-        <div className="container">
-          {/* <div className="row align-items-center">
-            <div className="col-md-12 col-lg-6 text-center text-lg-left">
-              <ul className="list-inline my-4 my-0">
-                <li className="list-inline-item">
-                  <a className="btn-link h3 text-secondary p-1" href="#">
-                    <i className="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a className="btn-link h3 text-secondary p-1" href="#">
-                    <i className="fa fa-facebook-official"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a className="btn-link h3 text-secondary p-1" href="#">
-                    <i className="fa fa-dribbble"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a className="btn-link h3 text-secondary p-1" href="#">
-                    <i className="fa fa-behance-square"></i>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a className="btn-link h3 text-secondary p-1" href="#">
-                    <i className="fa fa-github"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div> */}
-          <div className="row">
-            <div className="col">
-              <hr className="mb-4" />
-            </div>
-          </div>
-          <div className="row">
-            <div class="col-lg-4 col-md-12 text-secondary text-center text-lg-left">
-              <p class="pb-2"></p>
-            </div>
-            <div className="col-lg-4 col-md-12 text-secondary text-center">
-              <p className="pb-2">Made with ♥ in Vancouver, BC</p>
-            </div>
-            <div class="col-lg-4 col-md-12 text-secondary text-center text-lg-right">
-              <p class="pb-2">© 2020 Robin Binder</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <ContactForm />
+
+      <Footer />
     </Layout>
   )
 }

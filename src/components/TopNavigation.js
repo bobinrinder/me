@@ -5,7 +5,7 @@ import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons"
 import { Link, scrollToTop } from "react-scroll"
 import useScrollPosition from "@react-hook/window-scroll"
 
-const Header = () => {
+const TopNavigation = () => {
   const scrollY = useScrollPosition(30)
   return (
     <header>
@@ -117,4 +117,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default TopNavigation
