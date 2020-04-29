@@ -1,19 +1,26 @@
-import React from "react"
+import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons"
-import { Link, scrollToTop } from "react-scroll"
+import { scrollToTop } from "react-scroll"
 import useScrollPosition from "@react-hook/window-scroll"
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap"
+import ExternalLink from "./ExternalLink"
+import AnchorLink from "./AnchorLink"
 
 const TopNavigation = () => {
   const scrollY = useScrollPosition(30)
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => setIsOpen(!isOpen)
+
   return (
     <header>
-      <nav
-        className={
-          "navbar navbar-expand-lg fixed-top navbar-light" +
-          (scrollY > 15 ? " bg-white" : "")
-        }
+      <Navbar
+        light
+        fixed="top"
+        expand="lg"
+        className={scrollY > 15 ? " bg-white" : ""}
         style={
           scrollY > 15 ? { boxShadow: "0 0 3px rgba(0, 0, 0, 0.3)" } : null
         }
@@ -22,97 +29,44 @@ const TopNavigation = () => {
           <FontAwesomeIcon icon={faUserAstronaut} className="mr-2" /> Robin
           Binder
         </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            {/* <li className="nav-item mx-1">
-            <a className="nav-link" href="index.html">
-              Home
-            </a>
-          </li> */}
-            <li className="nav-item mx-1">
-              <Link
-                activeClass="active"
-                className="nav-link"
-                href="#about"
-                to="features-01"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <AnchorLink className="nav-link" to="about">
                 About Me
-              </Link>
-            </li>
-            <li className="nav-item mx-1">
-              <Link
-                activeClass="active"
-                className="nav-link"
-                href="#projects"
-                to="work-01"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
+              </AnchorLink>
+            </NavItem>
+            <NavItem>
+              <AnchorLink className="nav-link" to="work">
                 Work
-              </Link>
-            </li>
-            <li className="nav-item ml-1 mr-3">
-              <Link
-                activeClass="active"
-                className="nav-link"
-                href="#technologies"
-                to="technologies-01"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
+              </AnchorLink>
+            </NavItem>
+            <NavItem>
+              <AnchorLink className="nav-link" to="technologies">
                 Technologies
-              </Link>
-            </li>
-            <li className="nav-item ml-1 mr-3">
-              <Link
-                activeClass="active"
-                className="nav-link"
-                href="#contact"
-                to="footer-01"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-              >
+              </AnchorLink>
+            </NavItem>
+            <NavItem>
+              <AnchorLink className="nav-link" to="contact">
                 Contact
-              </Link>
-            </li>
-          </ul>
-          <a
+              </AnchorLink>
+            </NavItem>
+          </Nav>
+          <ExternalLink
             href="https://github.com/bobinrinder"
-            target="_blank"
-            rel="noopener noreferrer"
+            showExternalIcon={false}
           >
             <FontAwesomeIcon icon={faGithub} className="mr-3" size="2x" />
-          </a>
-          <a
+          </ExternalLink>
+          <ExternalLink
             href="https://www.linkedin.com/in/robin-binder-34a47734/"
-            target="_blank"
-            rel="noopener noreferrer"
+            showExternalIcon={false}
           >
             <FontAwesomeIcon icon={faLinkedin} className="mr-2" size="2x" />
-          </a>
-        </div>
-      </nav>
+          </ExternalLink>
+        </Collapse>
+      </Navbar>
     </header>
   )
 }

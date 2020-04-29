@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHandSpock, faInfoCircle } from "@fortawesome/free-solid-svg-icons"
-import { Link } from "react-scroll"
 import { Tooltip } from "reactstrap"
 import ExternalLink from "./ExternalLink"
+import AnchorLink from "./AnchorLink"
 
 const Hero = () => {
   const [tooltipOpen, setTooltipOpen] = useState(false)
@@ -63,44 +63,16 @@ const Hero = () => {
                 fontSize: "1.6rem",
               }}
             >
-              I'm{" "}
-              <Link
-                to="features-01"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                href="#about"
-              >
-                Robin
-              </Link>
+              I'm <AnchorLink to="about">Robin</AnchorLink>
               , a software engineer
               <br />
               <br />I am building{" "}
-              <Link
-                to="work-01"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                href="#about"
-              >
-                apps and websites
-              </Link>{" "}
-              for corporations, celebrities and non-profits
+              <AnchorLink to="work">apps and websites</AnchorLink> for
+              corporations, celebrities and non-profits
             </h4>
-            <Link
-              activeClass="active"
-              className="btn btn-warning btn-lg mr-2"
-              href="#contact"
-              to="footer-01"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
+            <AnchorLink className="btn btn-warning btn-lg mr-2" to="contact">
               <FontAwesomeIcon icon={faHandSpock} className="mr-2" /> Say Hi
-            </Link>
+            </AnchorLink>
           </div>
         </div>
       </div>

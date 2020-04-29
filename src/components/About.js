@@ -7,7 +7,7 @@ const About = () => {
       <div className="container">
         <hr className="m-0" />
       </div>
-      <div className="py-2" id="features-01">
+      <div className="py-2" id="about">
         <div className="container py-5 my-3">
           <div className="row">
             <div className="col-12 text-center">

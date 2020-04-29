@@ -13,7 +13,7 @@ const HeaderWrapper = ({ children }) => {
 }
 const ContactForm = () => {
   return (
-    <div className="pt-5 mt-5" id="content-03">
+    <div className="pt-5 mt-5" id="contact">
       <div className="container py-5">
         <NetlifyForm name="contact">
           {({ loading, error, success }) => (

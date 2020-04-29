@@ -2,7 +2,7 @@ import React from "react"
 
 const Technologies = () => {
   return (
-    <div className="py-5 bg-light" id="technologies-01">
+    <div className="py-5 bg-light" id="technologies">
       <div className="container py-4 mt-5">
         <div className="row mb-3 text-center">
           <div className="col">

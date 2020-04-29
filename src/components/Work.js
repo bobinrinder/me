@@ -6,7 +6,7 @@ import AppStoreButton from "./AppStoreButton"
 
 const Work = () => {
   return (
-    <>
+    <div id="work">
       <div id="work-01">
         <div className="container-fluid">
           <div
@@ -186,7 +186,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
