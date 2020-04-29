@@ -14,15 +14,17 @@ const TopNavigation = () => {
 
   const toggle = () => setIsOpen(!isOpen)
 
+  const isNavTransparent = scrollY < 15 && !isOpen
+
   return (
     <header>
       <Navbar
         light
         fixed="top"
         expand="lg"
-        className={scrollY > 15 ? " bg-white" : ""}
+        className={isNavTransparent ? "" : " bg-white"}
         style={
-          scrollY > 15 ? { boxShadow: "0 0 3px rgba(0, 0, 0, 0.3)" } : null
+          isNavTransparent ? null : { boxShadow: "0 0 3px rgba(0, 0, 0, 0.3)" }
         }
       >
         <a className="navbar-brand p-0" href="#top" onClick={scrollToTop}>
