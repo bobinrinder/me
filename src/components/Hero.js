@@ -12,10 +12,12 @@ const Hero = () => {
 
   return (
     <div
-      id="hero-01"
+      id="hero"
       style={{
         background:
-          "url('https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587622044/me3-right.fw-min_jdvazh.png') center top",
+          window.screen.width > 576
+            ? "url('https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587622044/me3-right.fw-min_jdvazh.png') center top"
+            : "",
         backgroundSize: "cover",
       }}
     >
