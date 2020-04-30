@@ -11,8 +11,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="row">
-          <div class="col-lg-4 col-md-12 text-secondary text-center text-lg-left">
-            <p class="pb-2">
+          <div className="col-lg-4 col-md-12 text-secondary text-center text-lg-left">
+            <p className="pb-2">
               <ExternalLink href="https://github.com/bobinrinder/me">
                 Get this template on Github
               </ExternalLink>
@@ -27,8 +27,8 @@ const Footer = () => {
               in Vancouver, BC
             </p>
           </div>
-          <div class="col-lg-4 col-md-12 text-secondary text-center text-lg-right">
-            <p class="pb-2">© {new Date().getFullYear()} Robin Binder</p>
+          <div className="col-lg-4 col-md-12 text-secondary text-center text-lg-right">
+            <p className="pb-2">© {new Date().getFullYear()} Robin Binder</p>
           </div>
         </div>
       </div>

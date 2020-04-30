@@ -5,3 +5,13 @@ a:hover {
   color: #f1b708;
   text-decoration-style: dotted
 }
+#hero {
+  background: url('https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587622044/me3-right.fw-min_jdvazh.png') center top;
+  background-size: cover
+}
+@media only screen and (max-width: 600px) {
+  #hero {
+    background: none;
+    background-color: #f7f7f7;
+  }
+}

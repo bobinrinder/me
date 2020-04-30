@@ -28,42 +28,44 @@ const About = () => {
             <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
               <h3 className="h5 mb-3">Work History</h3>
               <table className="table">
-                <tr>
-                  <td>2018 - 2020</td>
-                  <td>
-                    Technical Lead at{" "}
-                    <ExternalLink href="https://m56studios.com">
-                      m56 Studios
-                    </ExternalLink>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2015 - 2018</td>
-                  <td>
-                    Lead Software Engineer at{" "}
-                    <ExternalLink href="https://coupcompany.com">
-                      The Coup Company
-                    </ExternalLink>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2011 - 2013</td>
-                  <td>
-                    Software Engineer at{" "}
-                    <ExternalLink href="https://peterhahn.com">
-                      Peter Hahn GmbH
-                    </ExternalLink>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2008 - 2011</td>
-                  <td>
-                    Cooporative Student at{" "}
-                    <ExternalLink href="https://peterhahn.com">
-                      Peter Hahn GmbH
-                    </ExternalLink>
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>2018 - 2020</td>
+                    <td>
+                      Technical Lead at{" "}
+                      <ExternalLink href="https://m56studios.com">
+                        m56 Studios
+                      </ExternalLink>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2015 - 2018</td>
+                    <td>
+                      Lead Software Engineer at{" "}
+                      <ExternalLink href="https://coupcompany.com">
+                        The Coup Company
+                      </ExternalLink>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2011 - 2013</td>
+                    <td>
+                      Software Engineer at{" "}
+                      <ExternalLink href="https://peterhahn.com">
+                        Peter Hahn GmbH
+                      </ExternalLink>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2008 - 2011</td>
+                    <td>
+                      Cooporative Student at{" "}
+                      <ExternalLink href="https://peterhahn.com">
+                        Peter Hahn GmbH
+                      </ExternalLink>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

@@ -11,16 +11,7 @@ const Hero = () => {
   const toggleTooltip = () => setTooltipOpen(!tooltipOpen)
 
   return (
-    <div
-      id="hero"
-      style={{
-        background:
-          window.screen.width > 576
-            ? "url('https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587622044/me3-right.fw-min_jdvazh.png') center top"
-            : "",
-        backgroundSize: "cover",
-      }}
-    >
+    <div id="hero">
       <div
         className="container d-flex flex-column"
         style={{ minHeight: "105vh" }}
