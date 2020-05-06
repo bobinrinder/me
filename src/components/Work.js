@@ -21,7 +21,6 @@ const Work = () => {
                 alt="fit52 Screenshot"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587878885/fit52-screenshot-high_c7kv9v.png"
                 width="300"
-                className="justify-content-center align-self-center"
               />
             </div>
             <div className="col-lg-4 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
@@ -38,6 +37,10 @@ const Work = () => {
                 nourish your body mind and soul to achieve your personal
                 wellness goals.
               </p>
+              <div class="alert alert-secondary" role="alert">
+                Users: >100k | Role: Technical Lead | Stack: React Native &
+                Laravel
+              </div>
               <AppStoreButton
                 href="https://apps.apple.com/app/apple-store/id1475006543?mt=8"
                 alt="Download fit52 from the App Store"
@@ -50,9 +53,9 @@ const Work = () => {
 
       <div
         className="py-5"
-        id="work-02"
+        id="work-03"
         style={{
-          backgroundColor: "rgb(231, 100, 37)",
+          backgroundColor: "#310935",
           backgroundSize: "cover",
         }}
       >
@@ -62,7 +65,60 @@ const Work = () => {
         >
           <div className="row my-auto">
             <div className="col-lg-4 col-md-10 col-sm-12 mr-auto py-4">
-              <svg x="0px" y="0px" viewBox="0 0 457 194.6" xmlSpace="preserve">
+              <LazyLoadImage
+                src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587921026/storyhive-logo_x4wwwp.svg"
+                width="250"
+              />
+              <p className="lead pb-4 text-white my-4">
+                STORYHIVE is a community-powered funding program for emerging
+                content creators in Canada.
+              </p>
+              <a
+                className="btn btn-light btn-lg"
+                href="https://www.storyhive.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                storyhive.com
+                <FontAwesomeIcon icon={faAngleRight} className="ml-2" />{" "}
+              </a>
+            </div>
+            <div className="col-lg-4 col-md-10 col-sm-12 py-4">
+              <LazyLoadImage
+                alt="Storyhive Screenshot"
+                src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587920443/storyhive-screenshot_i9bvcu.png"
+                width="300"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="py-5"
+        id="work-02"
+        style={{
+          backgroundColor: "rgb(231, 100, 37)",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="container-fluid" style={{ minHeight: "95vh" }}>
+          <div className="row">
+            <div className="col-lg-6 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
+              <LazyLoadImage
+                alt="Fudos Screenshot"
+                src="https://res.cloudinary.com/robinbinder/image/upload/v1587923085/fudos-screenshot-2-min_six0na.png"
+                width="300"
+              />
+            </div>
+            <div className="col-lg-4 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
+              <svg
+                x="0px"
+                y="0px"
+                viewBox="0 0 457 194.6"
+                xmlSpace="preserve"
+                width="200"
+              >
                 <g id="Layer_3"></g>
                 <g id="Layer_1">
                   <g>
@@ -133,56 +189,7 @@ const Work = () => {
                 <FontAwesomeIcon icon={faAngleRight} className="ml-2" />{" "}
               </a>
             </div>
-            <div className="col-lg-4 col-md-10 col-sm-12 py-4">
-              <LazyLoadImage
-                alt="Fudos Screenshot"
-                src="https://res.cloudinary.com/robinbinder/image/upload/v1587923085/fudos-screenshot-2-min_six0na.png"
-                width="300"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        className="py-5"
-        id="work-03"
-        style={{
-          backgroundColor: "#310935",
-          backgroundSize: "cover",
-        }}
-      >
-        <div
-          className="container d-flex flex-column"
-          style={{ minHeight: "95vh" }}
-        >
-          <div className="row my-auto">
-            <div className="col-lg-4 col-md-10 col-sm-12 mr-auto py-4">
-              <LazyLoadImage
-                src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587921026/storyhive-logo_x4wwwp.svg"
-                width="250"
-              />
-              <p className="lead pb-4 text-white my-4">
-                STORYHIVE is a community-powered funding program for emerging
-                content creators in Canada.
-              </p>
-              <a
-                className="btn btn-light btn-lg"
-                href="https://www.storyhive.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                storyhive.com
-                <FontAwesomeIcon icon={faAngleRight} className="ml-2" />{" "}
-              </a>
-            </div>
-            <div className="col-lg-4 col-md-10 col-sm-12 py-4">
-              <LazyLoadImage
-                alt="Storyhive Screenshot"
-                src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587920443/storyhive-screenshot_i9bvcu.png"
-                width="300"
-              />
-            </div>
+            <div className="col-lg-2"></div>
           </div>
         </div>
       </div>

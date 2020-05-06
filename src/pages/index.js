@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 import Hero from "../components/Hero"
 import About from "../components/About"
 import Work from "../components/Work"
-import Technologies from "../components/Technologies"
+// import Technologies from "../components/Technologies"
 import ContactForm from "../components/ContactForm"
 import Footer from "../components/Footer"
 
@@ -23,7 +23,7 @@ const IndexPage = () => {
 
       <Work />
 
-      <Technologies />
+      {/* <Technologies /> */}
 
       <ContactForm />
 

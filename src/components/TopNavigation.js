@@ -44,11 +44,11 @@ const TopNavigation = () => {
                 Work
               </AnchorLink>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <AnchorLink className="nav-link" to="technologies">
                 Technologies
               </AnchorLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <AnchorLink className="nav-link" to="contact">
                 Contact
