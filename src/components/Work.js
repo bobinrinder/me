@@ -7,7 +7,7 @@ import { Table, Container, Row, Col } from "reactstrap"
 
 const Work = () => {
   return (
-    <>
+    <div id="work">
       <Container
         id="work-01"
         fluid
@@ -284,7 +284,7 @@ const Work = () => {
           </Row>
         </Container>
       </Container>
-    </>
+    </div>
   )
 }
 
