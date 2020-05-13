@@ -3,76 +3,143 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import AppStoreButton from "./AppStoreButton"
+import { Table, Container, Row, Col } from "reactstrap"
 
 const Work = () => {
   return (
-    <div id="work">
-      <div id="work-01">
-        <div className="container-fluid">
-          <div
-            className="row mt-3"
+    <>
+      <Container
+        id="work-01"
+        fluid
+        style={{
+          backgroundColor: "#028996",
+          minHeight: "100vh",
+        }}
+      >
+        <Container>
+          <Row
+            className="mt-3"
             style={{
               backgroundColor: "#028996",
-              minHeight: "100vh",
             }}
           >
-            <div className="col-lg-6 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
+            <div className="col-lg-4 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
               <LazyLoadImage
                 alt="fit52 Screenshot"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587878885/fit52-screenshot-high_c7kv9v.png"
                 width="300"
               />
             </div>
-            <div className="col-lg-4 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
+            <div className="col-lg-8 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
               <LazyLoadImage
                 alt="fit52 Logo"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587958064/fit52-logo_ddbbu6.png"
                 width="150"
               />
-              <p className="my-4 lead text-white">
-                fit52 is a community-powered fitness platform that makes it easy
-                for you to find your path to a stronger, healthier you, 52 weeks
-                of the year. Inspired by Carrie Underwood’s passion for an
-                active lifestyle, fit52 follows her fitness routines to help
-                nourish your body mind and soul to achieve your personal
-                wellness goals.
-              </p>
-              <div class="alert alert-secondary" role="alert">
-                Users: >100k | Role: Technical Lead | Stack: React Native &
-                Laravel
-              </div>
+              <Row>
+                <Col lg="6">
+                  <p className="my-4 text-white">
+                    fit52 is a community-powered fitness platform that makes it
+                    easy for you to find your path to a stronger, healthier you,
+                    52 weeks of the year. Inspired by Carrie Underwood’s passion
+                    for an active lifestyle, fit52 follows her fitness routines
+                    to help nourish your body mind and soul to achieve your
+                    personal wellness goals.
+                  </p>
+                </Col>
+                <Col lg="6">
+                  <Table className="mt-2">
+                    <tbody>
+                      <tr>
+                        <td class="text-white border-0">Users</td>
+                        <td class="text-white border-0">> 100k</td>
+                      </tr>
+                      <tr>
+                        <td class="text-white">Stack</td>
+                        <td class="text-white">React Native and Laravel</td>
+                      </tr>
+                      <tr>
+                        <td class="text-white">Role</td>
+                        <td class="text-white">Technical Lead</td>
+                      </tr>
+                      <tr>
+                        <td class="text-white">Team Size</td>
+                        <td class="text-white">10</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
               <AppStoreButton
                 href="https://apps.apple.com/app/apple-store/id1475006543?mt=8"
                 alt="Download fit52 from the App Store"
               />
             </div>
-            <div className="col-lg-2"></div>
-          </div>
-        </div>
-      </div>
+          </Row>
+        </Container>
+      </Container>
 
-      <div
-        className="py-5"
-        id="work-03"
+      <Container
+        id="work-02"
+        fluid
         style={{
           backgroundColor: "#310935",
-          backgroundSize: "cover",
+          minHeight: "100vh",
         }}
       >
-        <div
-          className="container d-flex flex-column"
-          style={{ minHeight: "95vh" }}
-        >
-          <div className="row my-auto">
-            <div className="col-lg-4 col-md-10 col-sm-12 mr-auto py-4">
+        <Container>
+          <Row
+            style={{
+              backgroundColor: "#310935",
+            }}
+          >
+            <div className="col-lg-4 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
               <LazyLoadImage
-                src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587921026/storyhive-logo_x4wwwp.svg"
-                width="250"
+                alt="Storyhive Screenshot"
+                src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1589346788/telus-storyhive-screenshot-1_m4hwib.png"
+                width="300"
               />
-              <p className="lead pb-4 text-white my-4">
-                STORYHIVE is a community-powered funding program for emerging
-                content creators in Canada.
-              </p>
+            </div>
+            <div className="col-lg-8 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
+              <LazyLoadImage
+                alt="fit52 Logo"
+                src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587921026/storyhive-logo_x4wwwp.svg"
+                width="150"
+              />
+              <Row>
+                <Col lg="6">
+                  <p className="my-4 text-white">
+                    STORYHIVE has funded productions and supported emerging
+                    filmmakers with mentorship and support from the National
+                    Screen Institute, bringing hundreds of films to life online
+                    and around the world. Over the years the platform was the
+                    base for over 5 million dollars in funding that helped
+                    kickstart promising careers of creatives.
+                  </p>
+                </Col>
+                <Col lg="6">
+                  <Table className="mt-3">
+                    <tbody>
+                      <tr>
+                        <td class="text-white border-0">Users</td>
+                        <td class="text-white border-0">> 2m</td>
+                      </tr>
+                      <tr>
+                        <td class="text-white">Stack</td>
+                        <td class="text-white">JavaScript and Zend</td>
+                      </tr>
+                      <tr>
+                        <td class="text-white">Role</td>
+                        <td class="text-white">Lead Engineer</td>
+                      </tr>
+                      <tr>
+                        <td class="text-white">Team Size</td>
+                        <td class="text-white">8</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
               <a
                 className="btn btn-light btn-lg"
                 href="https://www.storyhive.com"
@@ -83,41 +150,38 @@ const Work = () => {
                 <FontAwesomeIcon icon={faAngleRight} className="ml-2" />{" "}
               </a>
             </div>
-            <div className="col-lg-4 col-md-10 col-sm-12 py-4">
-              <LazyLoadImage
-                alt="Storyhive Screenshot"
-                src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587920443/storyhive-screenshot_i9bvcu.png"
-                width="300"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+          </Row>
+        </Container>
+      </Container>
 
-      <div
-        className="py-5"
-        id="work-02"
+      <Container
+        id="work-03"
+        fluid
         style={{
           backgroundColor: "rgb(231, 100, 37)",
-          backgroundSize: "cover",
         }}
       >
-        <div className="container-fluid" style={{ minHeight: "95vh" }}>
-          <div className="row">
-            <div className="col-lg-6 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
+        <Container>
+          <Row
+            style={{
+              backgroundColor: "rgb(231, 100, 37)",
+              minHeight: "100vh",
+            }}
+          >
+            <div className="col-lg-4 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
               <LazyLoadImage
                 alt="Fudos Screenshot"
-                src="https://res.cloudinary.com/robinbinder/image/upload/v1587923085/fudos-screenshot-2-min_six0na.png"
+                src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1589348669/fudos-screenshot-1_tm5hh6.png"
                 width="300"
               />
             </div>
-            <div className="col-lg-4 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
+            <div className="col-lg-8 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
               <svg
                 x="0px"
                 y="0px"
                 viewBox="0 0 457 194.6"
                 xmlSpace="preserve"
-                width="200"
+                width="150"
               >
                 <g id="Layer_3"></g>
                 <g id="Layer_1">
@@ -172,15 +236,43 @@ const Work = () => {
                 </g>
                 <g id="Layer_2"></g>
               </svg>
-              <p className="lead pb-4 my-4 text-white">
-                Fudos is building a community for foodies. We support chefs of
-                all abilities, and welcome you to share your home recipes,
-                explore favorite dishes, and inspire each other for the love of
-                food.
-              </p>
+              <Row>
+                <Col lg="6">
+                  <p className="my-4 text-white">
+                    Fudos is building a community for foodies that supports
+                    chefs of all abilities, and welcomes you to share your home
+                    recipes, explore favorite dishes, and inspire each other for
+                    the love of food. Competitions with celebrity chefs and
+                    great prizes await. Create content with the iOS app or vote
+                    for recipes on the web portal.
+                  </p>
+                </Col>
+                <Col lg="6">
+                  <Table className="mt-2">
+                    <tbody>
+                      <tr>
+                        <td class="text-white border-0">Users</td>
+                        <td class="text-white border-0">> 20k</td>
+                      </tr>
+                      <tr>
+                        <td class="text-white">Stack</td>
+                        <td class="text-white">React and Laravel</td>
+                      </tr>
+                      <tr>
+                        <td class="text-white">Role</td>
+                        <td class="text-white">Technical Lead</td>
+                      </tr>
+                      <tr>
+                        <td class="text-white">Team Size</td>
+                        <td class="text-white">8</td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Col>
+              </Row>
               <a
                 className="btn btn-light btn-lg"
-                href="https://www.storyhive.com"
+                href="https://fudos.recipes"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "rgb(231, 100, 37)" }}
@@ -189,11 +281,10 @@ const Work = () => {
                 <FontAwesomeIcon icon={faAngleRight} className="ml-2" />{" "}
               </a>
             </div>
-            <div className="col-lg-2"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Row>
+        </Container>
+      </Container>
+    </>
   )
 }
 

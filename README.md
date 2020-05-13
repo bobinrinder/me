@@ -5,22 +5,27 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Robin Binder - Portfolio
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Based on [Gatsby's default starter](https://github.com/gatsbyjs/gatsby-starter-default)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+I always struggled building my own portfolio, so if you want to use this as a base or even just pieces of it, go ahead. A mention with a backlink somewhere would be nice though. And maybe remove my copy and assets.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Pre-Conditions.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+    Check out [Gatsby's setup guide](https://www.gatsbyjs.org/docs/quick-start/) if you haven't installed Gatsby's CLI.
+
+1.  **Setup.**
+
+    Clone the repo and install the libraries.
 
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    git clone git@github.com:bobinrinder/me.git
+    cd me/
+    yarn
     ```
 
 1.  **Start developing.**
@@ -28,7 +33,6 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-default-starter/
     gatsby develop
     ```
 
@@ -38,7 +42,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
@@ -92,8 +96,8 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/bobinrinder/me)
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/bobinrinder/me)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
