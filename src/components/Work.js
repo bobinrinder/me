@@ -13,7 +13,6 @@ const Work = () => {
         fluid
         style={{
           backgroundColor: "#028996",
-          minHeight: "100vh",
         }}
       >
         <Container>
@@ -21,6 +20,7 @@ const Work = () => {
             className="mt-3"
             style={{
               backgroundColor: "#028996",
+              minHeight: "100vh",
             }}
           >
             <div className="col-lg-4 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
@@ -84,13 +84,13 @@ const Work = () => {
         fluid
         style={{
           backgroundColor: "#310935",
-          minHeight: "100vh",
         }}
       >
         <Container>
           <Row
             style={{
               backgroundColor: "#310935",
+              minHeight: "100vh",
             }}
           >
             <div className="col-lg-4 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">

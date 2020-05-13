@@ -18,6 +18,10 @@ I always struggled building my own portfolio, so if you want to use this as a ba
 
     Check out [Gatsby's setup guide](https://www.gatsbyjs.org/docs/quick-start/) if you haven't installed Gatsby's CLI.
 
+    The contact form is setup to use [Netlify Forms](https://www.netlify.com/products/forms/).
+
+    For optimal performance this setup uses [Cloudinary](https://cloudinary.com/) for image delivery.
+
 1.  **Setup.**
 
     Clone the repo and install the libraries.
