@@ -1,38 +1,39 @@
 import React from "react"
 import ExternalLink from "./ExternalLink"
+import { Container, Row, Col } from "reactstrap"
 
 const Footer = () => {
   return (
-    <div className="pt-5 pb-1" id="footer-01">
-      <div className="container">
-        <div className="row">
-          <div className="col">
+    <footer>
+      <Container className="pt-5 pb-1">
+        <Row>
+          <Col>
             <hr className="mb-4" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-4 col-md-12 text-secondary text-center text-lg-left">
-            <p className="pb-2">
+          </Col>
+        </Row>
+        <Row className="pb-2">
+          <Col lg="4" md="12">
+            <p>
               <ExternalLink href="https://github.com/bobinrinder/me">
                 Get this template on Github
               </ExternalLink>
             </p>
-          </div>
-          <div className="col-lg-4 col-md-12 text-secondary text-center">
-            <p className="pb-2">
+          </Col>
+          <Col lg="4" md="12" className="text-secondary text-center">
+            <p>
               Built with{" "}
               <ExternalLink href="https://www.gatsbyjs.org/">
                 Gatsby
               </ExternalLink>{" "}
               in Vancouver, BC
             </p>
-          </div>
-          <div className="col-lg-4 col-md-12 text-secondary text-center text-lg-right">
-            <p className="pb-2">© {new Date().getFullYear()} Robin Binder</p>
-          </div>
-        </div>
-      </div>
-    </div>
+          </Col>
+          <Col lg="4" md="12" className="text-secondary text-lg-right">
+            <p>© {new Date().getFullYear()} Robin Binder</p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   )
 }
 

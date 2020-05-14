@@ -51,20 +51,20 @@ const Work = () => {
                   <Table className="mt-2">
                     <tbody>
                       <tr>
-                        <td class="text-white border-0">Users</td>
-                        <td class="text-white border-0">> 100k</td>
+                        <td className="text-white border-0">Users</td>
+                        <td className="text-white border-0">> 100k</td>
                       </tr>
                       <tr>
-                        <td class="text-white">Stack</td>
-                        <td class="text-white">React Native and Laravel</td>
+                        <td className="text-white">Stack</td>
+                        <td className="text-white">React Native and Laravel</td>
                       </tr>
                       <tr>
-                        <td class="text-white">Role</td>
-                        <td class="text-white">Technical Lead</td>
+                        <td className="text-white">Role</td>
+                        <td className="text-white">Technical Lead</td>
                       </tr>
                       <tr>
-                        <td class="text-white">Team Size</td>
-                        <td class="text-white">10</td>
+                        <td className="text-white">Team Size</td>
+                        <td className="text-white">10</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -121,20 +121,20 @@ const Work = () => {
                   <Table className="mt-3">
                     <tbody>
                       <tr>
-                        <td class="text-white border-0">Users</td>
-                        <td class="text-white border-0">> 2m</td>
+                        <td className="text-white border-0">Users</td>
+                        <td className="text-white border-0">> 2m</td>
                       </tr>
                       <tr>
-                        <td class="text-white">Stack</td>
-                        <td class="text-white">JavaScript and Zend</td>
+                        <td className="text-white">Stack</td>
+                        <td className="text-white">JavaScript and Zend</td>
                       </tr>
                       <tr>
-                        <td class="text-white">Role</td>
-                        <td class="text-white">Lead Engineer</td>
+                        <td className="text-white">Role</td>
+                        <td className="text-white">Lead Engineer</td>
                       </tr>
                       <tr>
-                        <td class="text-white">Team Size</td>
-                        <td class="text-white">8</td>
+                        <td className="text-white">Team Size</td>
+                        <td className="text-white">8</td>
                       </tr>
                     </tbody>
                   </Table>
@@ -251,20 +251,20 @@ const Work = () => {
                   <Table className="mt-2">
                     <tbody>
                       <tr>
-                        <td class="text-white border-0">Users</td>
-                        <td class="text-white border-0">> 20k</td>
+                        <td className="text-white border-0">Users</td>
+                        <td className="text-white border-0">> 20k</td>
                       </tr>
                       <tr>
-                        <td class="text-white">Stack</td>
-                        <td class="text-white">React and Laravel</td>
+                        <td className="text-white">Stack</td>
+                        <td className="text-white">React and Laravel</td>
                       </tr>
                       <tr>
-                        <td class="text-white">Role</td>
-                        <td class="text-white">Technical Lead</td>
+                        <td className="text-white">Role</td>
+                        <td className="text-white">Technical Lead</td>
                       </tr>
                       <tr>
-                        <td class="text-white">Team Size</td>
-                        <td class="text-white">8</td>
+                        <td className="text-white">Team Size</td>
+                        <td className="text-white">8</td>
                       </tr>
                     </tbody>
                   </Table>
