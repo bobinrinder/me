@@ -28,6 +28,7 @@ const Work = () => {
                 alt="fit52 Screenshot"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587878885/fit52-screenshot-high_c7kv9v.png"
                 width="300"
+                effect="opacity"
               />
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
@@ -35,6 +36,7 @@ const Work = () => {
                 alt="fit52 Logo"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587958064/fit52-logo_ddbbu6.png"
                 width="150"
+                effect="opacity"
               />
               <Row>
                 <Col lg="6">
@@ -98,6 +100,7 @@ const Work = () => {
                 alt="Storyhive Screenshot"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1589346788/telus-storyhive-screenshot-1_m4hwib.png"
                 width="300"
+                effect="opacity"
               />
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
@@ -105,6 +108,7 @@ const Work = () => {
                 alt="fit52 Logo"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587921026/storyhive-logo_x4wwwp.svg"
                 width="150"
+                effect="opacity"
               />
               <Row>
                 <Col lg="6">
@@ -173,6 +177,7 @@ const Work = () => {
                 alt="Fudos Screenshot"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1589348669/fudos-screenshot-1_tm5hh6.png"
                 width="300"
+                effect="opacity"
               />
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
