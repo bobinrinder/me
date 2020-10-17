@@ -30,7 +30,7 @@ const Hero = () => {
 
             <span href="#" id="HelloTooltip">
               <FontAwesomeIcon
-                color="#ffc107"
+                color="#FF4500"
                 icon={faInfoCircle}
                 size="lg"
                 style={{ position: "relative", bottom: "40px" }}

@@ -1,9 +1,17 @@
 a {
-  color: #ffc107
+  color: #FF4500
 }
 a:hover {
-  color: #f1b708;
+  color: #dc4006;
   text-decoration-style: dotted
+}
+.btn-warning {
+  color: #fff;
+  background-color: #FF4500
+}
+.btn-warning:hover {
+  color: #fff;
+  background-color: #dc4006
 }
 #hero {
   background: url('https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587622044/me3-right.fw-min_jdvazh.png') center top;
