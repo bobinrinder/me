@@ -17,7 +17,7 @@ const Hero = () => {
         style={{ minHeight: "105vh" }}
       >
         <div className="row my-auto">
-          <div className="col-lg-5 col-md-8 col-sm-12">
+          <div className="col-lg-6 col-md-8 col-sm-12">
             <h3
               className="display-3 font-weight-normal mr-2"
               style={{
