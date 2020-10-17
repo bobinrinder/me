@@ -9,7 +9,7 @@ a:hover {
   color: #fff;
   background-color: #FF4500
 }
-.btn-warning:hover {
+.btn-warning:hover, .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle, .btn-warning:focus, .btn-warning.focus {
   color: #fff;
   background-color: #dc4006
 }

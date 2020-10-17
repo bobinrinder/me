@@ -4,8 +4,8 @@ import { Container, Row, Col, Table } from "reactstrap"
 
 const About = () => {
   return (
-    <>
-      <Container id="about">
+    <div id="about">
+      <Container id="about-01">
         <hr className="m-0" />
       </Container>
       <Container className="py-5 my-3">
@@ -115,7 +115,7 @@ const About = () => {
             </div>
           </Row> */}
       </Container>
-    </>
+    </div>
   )
 }
 
