@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import AppStoreButton from "./AppStoreButton"
+import PlayStoreButton from "./PlayStoreButton"
 import { Table, Container, Row, Col } from "reactstrap"
 
 const Work = () => {
@@ -54,7 +55,7 @@ const Work = () => {
                     <tbody>
                       <tr>
                         <td className="text-white border-0">Users</td>
-                        <td className="text-white border-0">> 100k</td>
+                        <td className="text-white border-0">&gt; 100k</td>
                       </tr>
                       <tr>
                         <td className="text-white">Stack</td>
@@ -72,10 +73,8 @@ const Work = () => {
                   </Table>
                 </Col>
               </Row>
-              <AppStoreButton
-                href="https://apps.apple.com/app/apple-store/id1475006543?mt=8"
-                alt="Download fit52 from the App Store"
-              />
+              <AppStoreButton href="https://apps.apple.com/app/apple-store/id1475006543?mt=8" />
+              <PlayStoreButton href="https://play.google.com/store/apps/details?id=com.creativelabs.fit52" />
             </div>
           </Row>
         </Container>
@@ -126,7 +125,7 @@ const Work = () => {
                     <tbody>
                       <tr>
                         <td className="text-white border-0">Users</td>
-                        <td className="text-white border-0">> 2m</td>
+                        <td className="text-white border-0">&gt; 2m</td>
                       </tr>
                       <tr>
                         <td className="text-white">Stack</td>
@@ -257,7 +256,7 @@ const Work = () => {
                     <tbody>
                       <tr>
                         <td className="text-white border-0">Users</td>
-                        <td className="text-white border-0">> 20k</td>
+                        <td className="text-white border-0">&gt; 20k</td>
                       </tr>
                       <tr>
                         <td className="text-white">Stack</td>
