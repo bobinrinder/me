@@ -16,7 +16,7 @@ const About = () => {
         </Row>
         <Row>
           <Col lg="6" md="6" sm="12" className="mb-3">
-            <h3 className="h5 mb-3">Personal History</h3>
+            <h2 className="h5 mb-3">Personal History</h2>
             <p className="text-secondary mb-3 mr-3">
               Raised in the suburbs of Stuttgart, Germany, my fascination with
               technology and programming started early. After earning a degree
