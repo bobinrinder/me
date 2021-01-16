@@ -34,6 +34,15 @@ const About = () => {
             <Table>
               <tbody>
                 <tr>
+                  <td>2020 - 2021</td>
+                  <td>
+                    Head Of Engineering at{" "}
+                    <ExternalLink href="https://m56studios.com">
+                      m56 Studios
+                    </ExternalLink>
+                  </td>
+                </tr>
+                <tr>
                   <td>2018 - 2020</td>
                   <td>
                     Technical Lead at{" "}
@@ -60,7 +69,7 @@ const About = () => {
                     </ExternalLink>
                   </td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td>2008 - 2011</td>
                   <td>
                     Cooperative Student at{" "}
@@ -68,7 +77,7 @@ const About = () => {
                       DHBW Stuttgart
                     </ExternalLink>
                   </td>
-                </tr>
+                </tr> */}
               </tbody>
             </Table>
           </Col>
