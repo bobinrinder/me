@@ -36,7 +36,7 @@ const About = () => {
                 <tr>
                   <td>2020 - 2021</td>
                   <td>
-                    Head Of Engineering at{" "}
+                    Head of Engineering at{" "}
                     <ExternalLink href="https://m56studios.com">
                       m56 Studios
                     </ExternalLink>
