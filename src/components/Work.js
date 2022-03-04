@@ -55,7 +55,7 @@ const Work = () => {
                     <tbody>
                       <tr>
                         <td className="text-white border-0">Users</td>
-                        <td className="text-white border-0">&gt; 250k</td>
+                        <td className="text-white border-0">&gt; 450k</td>
                       </tr>
                       <tr>
                         <td className="text-white">Stack</td>
