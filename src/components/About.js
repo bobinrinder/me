@@ -34,7 +34,7 @@ const About = () => {
             <Table>
               <tbody>
                 <tr>
-                  <td>2020 - 2022</td>
+                  <td>2020 - 2023</td>
                   <td>
                     Head of Engineering at{" "}
                     <ExternalLink href="https://m56studios.com">
