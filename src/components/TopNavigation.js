@@ -58,12 +58,14 @@ const TopNavigation = () => {
           <ExternalLink
             href="https://github.com/bobinrinder"
             showExternalIcon={false}
+            aria-label="Robin Binder Github Link"
           >
             <FontAwesomeIcon icon={faGithub} className="mr-3" size="2x" />
           </ExternalLink>
           <ExternalLink
             href="https://www.linkedin.com/in/robin-binder-34a47734/"
             showExternalIcon={false}
+            aria-label="Robin Binder Linkedin Link"
           >
             <FontAwesomeIcon icon={faLinkedin} className="mr-2" size="2x" />
           </ExternalLink>
