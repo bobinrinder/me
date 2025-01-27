@@ -1,12 +1,12 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons"
-import { LazyLoadImage } from "react-lazy-load-image-component"
-import AppStoreButton from "./AppStoreButton"
-import PlayStoreButton from "./PlayStoreButton"
-import { Table, Container, Row, Col } from "reactstrap"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import AppStoreButton from "./AppStoreButton";
+import PlayStoreButton from "./PlayStoreButton";
+import { Table, Container, Row, Col } from "reactstrap";
 
 const Work = () => {
+  const Img = LazyLoadImage as any;
   return (
     <div id="work">
       <Container
@@ -25,18 +25,18 @@ const Work = () => {
             }}
           >
             <div className="col-lg-4 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
-              <LazyLoadImage
+              <Img
                 alt="fit52 Screenshot"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587878885/fit52-screenshot-high_c7kv9v.png"
-                width="300"
+                width={300}
                 effect="opacity"
               />
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
-              <LazyLoadImage
+              <Img
                 alt="fit52 Logo"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587958064/fit52-logo_ddbbu6.png"
-                width="150"
+                width={150}
                 effect="opacity"
               />
               <Row>
@@ -95,18 +95,18 @@ const Work = () => {
             }}
           >
             <div className="col-lg-4 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
-              <LazyLoadImage
+              <Img
                 alt="Storyhive Screenshot"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1589346788/telus-storyhive-screenshot-1_m4hwib.png"
-                width="300"
+                width={300}
                 effect="opacity"
               />
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 m-auto py-5 my-5 text-left">
-              <LazyLoadImage
+              <Img
                 alt="fit52 Logo"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587921026/storyhive-logo_x4wwwp.svg"
-                width="150"
+                width={150}
                 effect="opacity"
               />
               <Row>
@@ -172,10 +172,10 @@ const Work = () => {
             }}
           >
             <div className="col-lg-4 col-md-12 col-sm-12 m-auto py-5 my-5 text-center">
-              <LazyLoadImage
+              <Img
                 alt="Fudos Screenshot"
                 src="https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1589348669/fudos-screenshot-1_tm5hh6.png"
-                width="300"
+                width={300}
                 effect="opacity"
               />
             </div>
@@ -289,7 +289,7 @@ const Work = () => {
         </Container>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

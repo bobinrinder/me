@@ -1,14 +1,14 @@
-import React, { useState } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHandSpock, faInfoCircle } from "@fortawesome/free-solid-svg-icons"
-import { Tooltip } from "reactstrap"
-import ExternalLink from "./ExternalLink"
-import AnchorLink from "./AnchorLink"
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandSpock, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { Tooltip } from "reactstrap";
+import ExternalLink from "./ExternalLink";
+import AnchorLink from "./AnchorLink";
 
 const Hero = () => {
-  const [tooltipOpen, setTooltipOpen] = useState(false)
+  const [tooltipOpen, setTooltipOpen] = useState(false);
 
-  const toggleTooltip = () => setTooltipOpen(!tooltipOpen)
+  const toggleTooltip = () => setTooltipOpen(!tooltipOpen);
 
   return (
     <div id="hero">
@@ -25,10 +25,10 @@ const Hero = () => {
                 display: "inline",
               }}
             >
-              Hallöle
+              Hallole
             </h3>
 
-            <span href="#" id="HelloTooltip">
+            <span href="#" id="HelloTooltip" {...({} as any)}>
               <FontAwesomeIcon
                 color="#FF4500"
                 icon={faInfoCircle}
@@ -70,7 +70,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

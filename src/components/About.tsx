@@ -1,6 +1,5 @@
-import React from "react"
-import ExternalLink from "./ExternalLink"
-import { Container, Row, Col, Table } from "reactstrap"
+import ExternalLink from "./ExternalLink";
+import { Container, Row, Col, Table } from "reactstrap";
 
 const About = () => {
   return (
@@ -125,7 +124,7 @@ const About = () => {
           </Row> */}
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

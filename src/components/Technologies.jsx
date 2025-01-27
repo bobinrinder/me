@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Technologies = () => {
   return (
@@ -119,7 +119,7 @@ const Technologies = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Technologies
+export default Technologies;

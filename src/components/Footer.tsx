@@ -1,6 +1,5 @@
-import React from "react"
-import ExternalLink from "./ExternalLink"
-import { Container, Row, Col } from "reactstrap"
+import ExternalLink from "./ExternalLink";
+import { Container, Row, Col } from "reactstrap";
 
 const Footer = () => {
   return (
@@ -22,10 +21,8 @@ const Footer = () => {
           <Col lg="4" md="12" className="text-secondary text-center">
             <p>
               Built with{" "}
-              <ExternalLink href="https://www.gatsbyjs.org/">
-                Gatsby
-              </ExternalLink>{" "}
-              in Vancouver, BC
+              <ExternalLink href="https://vite.dev/">Vite</ExternalLink> in
+              Vancouver, BC
             </p>
           </Col>
           <Col lg="4" md="12" className="text-secondary text-lg-right">
@@ -34,7 +31,7 @@ const Footer = () => {
         </Row>
       </Container>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

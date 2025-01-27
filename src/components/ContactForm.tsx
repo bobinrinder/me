@@ -1,22 +1,32 @@
-import React from "react"
-import { Button, FormGroup, Label, Input } from "reactstrap"
-import NetlifyForm from "react-netlify-form"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import React from "react";
+import { Button, FormGroup, Label, Input } from "reactstrap";
+import NetlifyForm from "react-netlify-form";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const HeaderWrapper = ({ children }) => {
+const HeaderWrapper: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
   return (
     <div className="row text-center">
       <div className="col-lg-8 col-md-12 col-sm-12 mx-auto">{children}</div>
     </div>
-  )
-}
+  );
+};
+
 const ContactForm = () => {
+  const NetlifyFormular = NetlifyForm as any;
   return (
     <div className="pt-5 mt-5" id="contact">
       <div className="container py-5">
-        <NetlifyForm name="contact">
-          {({ loading, error, success }) => (
+        <NetlifyFormular name="contact">
+          {({
+            loading,
+            error,
+            success,
+          }: {
+            loading: boolean;
+            error: boolean;
+            success: boolean;
+          }) => (
             <div>
               {loading && (
                 <HeaderWrapper>
@@ -70,10 +80,10 @@ const ContactForm = () => {
               )}
             </div>
           )}
-        </NetlifyForm>
+        </NetlifyFormular>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

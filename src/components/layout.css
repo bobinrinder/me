@@ -1,21 +1,27 @@
 a {
-  color: #FF4500
+  color: #ff4500;
 }
 a:hover {
   color: #dc4006;
-  text-decoration-style: dotted
+  text-decoration-style: dotted;
 }
 .btn-warning {
   color: #fff;
-  background-color: #FF4500
+  background-color: #ff4500;
 }
-.btn-warning:hover, .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active, .show > .btn-warning.dropdown-toggle, .btn-warning:focus, .btn-warning.focus {
+.btn-warning:hover,
+.btn-warning:not(:disabled):not(.disabled):active,
+.btn-warning:not(:disabled):not(.disabled).active,
+.show > .btn-warning.dropdown-toggle,
+.btn-warning:focus,
+.btn-warning.focus {
   color: #fff;
-  background-color: #dc4006
+  background-color: #dc4006;
 }
 #hero {
-  background: url('https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587622044/me3-right.fw-min_jdvazh.png') center top;
-  background-size: cover
+  background: url("https://res.cloudinary.com/robinbinder/image/upload/f_auto,q_auto/v1587622044/me3-right.fw-min_jdvazh.png")
+    center top;
+  background-size: cover;
 }
 @media only screen and (max-width: 600px) {
   #hero {

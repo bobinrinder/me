@@ -1,20 +1,20 @@
-import React, { useState } from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons"
-import { scrollToTop } from "react-scroll"
-import useScrollPosition from "@react-hook/window-scroll"
-import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap"
-import ExternalLink from "./ExternalLink"
-import AnchorLink from "./AnchorLink"
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
+import { animateScroll as scroll } from "react-scroll";
+import useScrollPosition from "@react-hook/window-scroll";
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
+import ExternalLink from "./ExternalLink";
+import AnchorLink from "./AnchorLink";
 
 const TopNavigation = () => {
-  const scrollY = useScrollPosition(30)
-  const [isOpen, setIsOpen] = useState(false)
+  const scrollY = useScrollPosition(30);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen)
+  const toggle = () => setIsOpen(!isOpen);
 
-  const isNavTransparent = scrollY < 15 && !isOpen
+  const isNavTransparent = scrollY < 15 && !isOpen;
 
   return (
     <header>
@@ -24,10 +24,21 @@ const TopNavigation = () => {
         expand="lg"
         className={isNavTransparent ? "" : " bg-white"}
         style={
-          isNavTransparent ? null : { boxShadow: "0 0 3px rgba(0, 0, 0, 0.3)" }
+          isNavTransparent
+            ? undefined
+            : { boxShadow: "0 0 3px rgba(0, 0, 0, 0.3)" }
         }
       >
-        <a className="navbar-brand p-0" href="#top" onClick={scrollToTop}>
+        <a
+          className="navbar-brand p-0"
+          href="#top"
+          onClick={() =>
+            scroll.scrollToTop({
+              duration: 500,
+              smooth: true,
+            })
+          }
+        >
           <FontAwesomeIcon icon={faUserAstronaut} className="mr-2" /> Robin
           Binder
         </a>
@@ -72,7 +83,7 @@ const TopNavigation = () => {
         </Collapse>
       </Navbar>
     </header>
-  )
-}
+  );
+};
 
-export default TopNavigation
+export default TopNavigation;
