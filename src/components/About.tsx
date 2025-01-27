@@ -36,8 +36,8 @@ const About = () => {
                   <td>2020 - 2025</td>
                   <td>
                     Head of Engineering at{" "}
-                    <ExternalLink href="https://m56studios.com">
-                      m56 Studios
+                    <ExternalLink href="https://hellocaravan.com/">
+                      Caravan
                     </ExternalLink>
                   </td>
                 </tr>
@@ -45,8 +45,8 @@ const About = () => {
                   <td>2018 - 2020</td>
                   <td>
                     Technical Lead at{" "}
-                    <ExternalLink href="https://m56studios.com">
-                      m56 Studios
+                    <ExternalLink href="https://hellocaravan.com/">
+                      Caravan
                     </ExternalLink>
                   </td>
                 </tr>
