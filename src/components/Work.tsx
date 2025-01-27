@@ -274,7 +274,7 @@ const Work = () => {
                   </Table>
                 </Col>
               </Row>
-              <a
+              {/* <a
                 className="btn btn-light btn-lg"
                 href="https://fudos.recipes"
                 target="_blank"
@@ -283,7 +283,7 @@ const Work = () => {
               >
                 fudos.recipes
                 <FontAwesomeIcon icon={faAngleRight} className="ml-2" />{" "}
-              </a>
+              </a> */}
             </div>
           </Row>
         </Container>

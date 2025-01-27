@@ -54,7 +54,7 @@ const About = () => {
                   <td>2015 - 2018</td>
                   <td>
                     Lead Software Engineer at{" "}
-                    <ExternalLink href="https://coupcompany.com">
+                    <ExternalLink href="https://pitchbook.com/profiles/company/83186-02#overview">
                       The Coup Company
                     </ExternalLink>
                   </td>
