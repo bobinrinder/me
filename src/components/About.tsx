@@ -39,6 +39,10 @@ const About = () => {
                     <ExternalLink href="https://hellocaravan.com/">
                       Caravan
                     </ExternalLink>
+                    {' '}and{' '}
+                    <ExternalLink href="https://fit52.com/">
+                      fit52
+                    </ExternalLink>
                   </td>
                 </tr>
                 <tr>
